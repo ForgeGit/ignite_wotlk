@@ -6,10 +6,19 @@ The following is a collection of brief analyses conducted as part of an effort t
 
 ### WHAT WE KNEW BEFORE THIS
 
+- Fire Mages (TTW and FFB) are losing DPS due to ignite munching.
+
 ### ADDED VALUE 
+
+- There is a second bug related to ignite, named in here as ignite vomit, which results in a gain of DPS.
+- We confirmed munching is a much bigger problem for TTW mages compared to FFB.
+- The window for an ignite vomit to happen is <40ms and has a ~30% rate of ocurring.
 
 ### IMPLICATIONS
 
+- The Mage Sim has been updated to include an option for vomit (a.k.a. bleeding).
+- Attempts at consistently replicating and generating vomits in a real setting are currently underway.
+- We have a broader understanding of fire mage ignite damage, its bugs, and how they affect us.
 
 # Table of Contents
 
@@ -30,7 +39,7 @@ The following is a collection of brief analyses conducted as part of an effort t
 
 #### **Tl,dr:** 
 
-<ins> Ignite **munching**</ins> happens randomly to your ignite damage, and <ins>it is a DPS loss</ins>. More frequent on TTW Mages than FFB mages. As TTW, you can minimize its effects with a WA and/or a macro.
+<ins> Ignite **munching**</ins> happens randomly to your ignite damage, and it <ins>is a DPS loss</ins>. More frequent on TTW Mages than FFB mages. As TTW, you can minimize its effects with a WA and/or a macro.
 
 ### What is "munching"?
 
@@ -86,7 +95,7 @@ Figure 2: Example of a munching scenario 1. Different spell [5]
 
 #### **Tl,dr:** 
 
-<ins> Ignite **vomit**</ins> happens randomly to your ignite damage, and <ins>it is a DPS gain</ins>. Intentionally manipulating this bug in our favor seems unrealistic, if not impossible, until someone can replicate it consistently. 
+<ins> Ignite **vomit**</ins> happens randomly to your ignite damage, and it <ins>is a DPS gain</ins>. Intentionally manipulating this bug in our favor seems unrealistic, if not impossible, until someone can replicate it consistently. 
 
 ### What is "vomit"?
 
@@ -120,7 +129,7 @@ Figure 2: Example of a vomit scenario.  The spell before ignite crits/lands 28ms
 
 [The following log has a practical example, from figure 2,](https://classic.warcraftlogs.com/reports/a:mZaNPdTgzLFBVW8K#fight=3&type=damage&source=14&target=123&view=events) of vomit ocurring "naturally"
 
-(log shared by @Redteam#9819 in #🐲sim-and-log-review at Mage Discord long ago, and taken as an example after a vomit event was discovered months later)
+(log shared by @Redteam#9819 in [#🐲sim-and-log-review at Mage Discord](https://discord.gg/eszwRckRmA) long ago, and taken as an example after a vomit event was discovered months later)
 
 00:39.416 seconds into the log the following happens
 
