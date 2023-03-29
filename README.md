@@ -13,13 +13,13 @@ The following is a collection of brief analyses conducted as part of an effort t
 
 # Table of Contents
 
-1. [Munching](#munching---the-hidden-dps-loss-of-ignite) <br>
-2. [Vomit](#deaths) <br>
-3. [Graphic v.1.a](#interru)<br>
+1. [Munching: The hidden DPS loss on your Ignite](#munching---the-hidden-dps-loss-of-ignite) <br>
+2. [Vomit: When Ignite goes wrong for the best](#deaths) <br>
+3. [The vomit window](#interru)<br>
 4. [Anonymized Raid Deaths Report](#dea)<br>
 
 
-## Munching - The hidden DPS loss of Ignite 
+## Munching: The hidden DPS loss of Ignite 
 
 #### **Tl,dr:** 
 
@@ -79,7 +79,9 @@ Figure 2: Example of a munching scenario 1. Different spell [5]
 
 A less well-documented Ignite bug in Wrath of the Lich King is the opposite of Ignite Munch (from now on, "Ignite Vomit"), which allows an ignite to keep rolling and result in an additional tick that should not have occurred.
 
-This bug has been  discussed in an [ElitistJerk forum thread in 2008 [1]](https://web.archive.org/web/20100412150438/http://elitistjerks.com/f31/t19766-mage_rolling_ignites_they_back/), and the first documented claim for it can be traced back to another [ElitistJerk thread in 2007[2]](https://web.archive.org/web/20110810120414/http://elitistjerks.com/f31/t12302-mage_ignites_working_correctly/).
+Until recently (at the moment of writing), this bug had not been documented or described at all for Wrath of the Lich King Classic.
+
+This bug has been discussed in an [ElitistJerk forum thread in 2008 [1]](https://web.archive.org/web/20100412150438/http://elitistjerks.com/f31/t19766-mage_rolling_ignites_they_back/), and the first documented claim for it can be traced back to another [ElitistJerk thread in 2007[2]](https://web.archive.org/web/20110810120414/http://elitistjerks.com/f31/t12302-mage_ignites_working_correctly/).
 
 <img src="img/old_2007.png" />
 
@@ -87,7 +89,7 @@ This bug has been  discussed in an [ElitistJerk forum thread in 2008 [1]](https:
 
 Additionally, a brief explanation of the bug can be found in the [wow wiki section for Ignite Bugs, under the section "Known Bugs"](https://wowwiki-archive.fandom.com/wiki/Ignite_(old)#Past_changes). 
 
-Unlike "Ignite Munching", which is a bug interaction with a section named for its own in the wiki, Ignite Vomit is just described in a one paragraph as something that can happen, but that should not be confused with the old "rolling" ignite system from pre-2.0 (known to us as "Classic").
+Unlike "Ignite Munching", which has a section named for its own in the wiki, Ignite Vomit is just described in a one paragraph as something that can happen, but that should not be confused with the old "rolling" ignite system from pre-2.0 (known to us as "Classic").
 
 Figure 1: Example of a vomit scenario. The spell before ignite crits/lands on the same timestamp as the ignite, according to logs.[3]
 
@@ -96,6 +98,41 @@ Figure 1: Example of a vomit scenario. The spell before ignite crits/lands on th
 Figure 2: Example of a vomit scenario.  The spell before ignite crits/lands 28ms before the ignite.[4]
 
 <img src="img/vomit_example_2.png" />
+
+### Practical example
+
+The following log has a practical irl example of this bug ocurring
+https://classic.warcraftlogs.com/reports/a:mZaNPdTgzLFBVW8K#fight=3&type=damage&source=14&target=123&view=events
+(log shared by @Redteam#9819 in #🐲sim-and-log-review )
+
+00:39.416 seconds into the log the following happens
+```
+1.- Ignite tick for 6687
+
+2.- Fireball crits for 7984 
+[adds to ignite: 7984 * 0.4 = 3193] 
+expected ignite tick: (6687+3193) / 2 =  4939
+
+3.- Ignite ticks for 6687
+
+4.- Living bomb crits for 2007 
+[adds to ignite: 2007 * 0.4 = 802]
+
+5.- Fireball crits for 9393 
+[adds to ignite:  9393 * 0.4 = 3757]
+
+6.- Ignite ticks for 7220
+```
+To get a 7220 ignite tick you would need an ignite of 14440, which is only possible if the following happened:
+ 3193 (From 2.- Fireball) + 802 (From 4.- LB) + 3757 (From 5.- FB) + 6686 (From 3.- IG due to "Vomit")
+
+Doing :
+**(A)** 802 (4.- LB) + 3757 (5.- FB) + 3193 (2.- FB)  = 7752 / 2 = 3876
+or
+**(B)** 802 (4.- LB) + 3757 (5.- FB) + 6686 (3.- IG)  = 11245/ 2 = 5622
+
+Do not get close to the 7220 ignite tick seen in the log
+
 
 ### References
 
