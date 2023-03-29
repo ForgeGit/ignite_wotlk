@@ -21,7 +21,7 @@ The following is a collection of brief analyses conducted as part of an effort t
 
 ## Munching - The hidden DPS loss of Ignite 
 
-#### **Tl,dr:** __Ignite **munching**__ happens randomly to your ignite damage, and __it is a DPS loss__. More frequent on TTW Mages than FFB mages. As TTW, you can minimize its effects with a WA and/or a macro.
+#### **Tl,dr:** <ins> Ignite **munching**</ins> happens randomly to your ignite damage, and <ins>it is a DPS loss</ins>. More frequent on TTW Mages than FFB mages. As TTW, you can minimize its effects with a WA and/or a macro.
 
 Ignite munching is a __well-documented bug [1,2,3] that can cause a loss of DPS__ for Fire Mages due to how spell interactions work. 
 
