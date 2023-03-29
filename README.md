@@ -13,8 +13,8 @@ The following is a collection of brief analyses conducted as part of an effort t
 
 # Table of Contents
 
-1. [Graphic v1](#dea) <br>
-2. [Graphic v1.5?](#deaths) <br>
+1. [Munching](#munching---the-hidden-dps-loss-of-ignite) <br>
+2. [Vomit](#deaths) <br>
 3. [Graphic v.1.a](#interru)<br>
 4. [Anonymized Raid Deaths Report](#dea)<br>
 
@@ -24,6 +24,8 @@ The following is a collection of brief analyses conducted as part of an effort t
 #### **Tl,dr:** 
 
 <ins> Ignite **munching**</ins> happens randomly to your ignite damage, and <ins>it is a DPS loss</ins>. More frequent on TTW Mages than FFB mages. As TTW, you can minimize its effects with a WA and/or a macro.
+
+### What is "munching"?
 
 Ignite munching is a __well-documented bug [1,2,3] that can cause a loss of DPS__ for Fire Mages due to how spell interactions work. 
 
