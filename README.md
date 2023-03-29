@@ -2,7 +2,7 @@
 
 The following is a collection of brief analyses conducted as part of an effort to gain a better understanding of the bugs associated with Ignite (Munching and Vomit).
 
-## Tl;dr 
+## OVERALL Tl;dr 
 
 ### WHAT WE KNEW BEFORE THIS
 
