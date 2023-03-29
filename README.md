@@ -8,9 +8,9 @@ The following is a collection of brief analyses conducted as part of an effort t
 
 - Fire Mages (TTW and FFB) are losing DPS due to ignite munching.
 
-### ADDED VALUE 
+### WHAT WE KNOW NOW
 
-- There is a second bug related to ignite, named in here as ignite vomit, which in a vacuum can result in a gain of DPS.
+- There is a second bug, referred in here as ignite vomit, which in a vacuum results in a DPS gain.
 - We confirmed munching is a much bigger problem for TTW mages compared to FFB.
 - Across all mages, the negatives effects of "munching" are less severe than expected due to "vomit". But "munching" is still very much a problem.
 - The window for an ignite vomit to happen is <40ms and has a ~30% rate of ocurring.
@@ -96,7 +96,7 @@ Figure 2: Example of a munching scenario 1. Different spell [5]
 
 #### **Tl,dr:** 
 
-<ins> Ignite **vomit**</ins> happens randomly to your ignite damage, and it <ins>is a DPS gain</ins>. Intentionally manipulating this bug in our favor seems unrealistic, if not impossible, until someone can replicate it consistently. 
+<ins> Ignite **vomit**</ins> happens randomly to your ignite damage, and it <ins>is a DPS gain</ins>. Intentionally manipulating this bug in our favor seems unrealistic, if not impossible, until someone can replicate it consistently AND demonstrate it can be used in a real scenario. 
 
 ### What is "vomit"?
 
