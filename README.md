@@ -19,7 +19,9 @@ The following is a collection of brief analyses conducted as part of an effort t
     1.3. [How to (workaround) "munching"?](#how-to-workaround-munching) <br>
     1.4. [Examples of munching](#examples-of-munching) <br>
 2. [Vomit: When Ignite goes wrong for the best](#deaths) <br>
-    1.1. [What is "vomit"?](#what-is-munching)<br>
+    1.1. [What is "vomit"?](#what-is-vomit)<br>
+    1.2. [When is "vomit"?](#when-is-vomit) <br>
+    1.4. [Examples of munching](#examples-of-vomit) <br>
 3. [The vomit window](#interru)<br>
 4. [Anonymized Raid Deaths Report](#dea)<br>
 
@@ -38,10 +40,10 @@ Ignite munching is a well-documented bug [1,2,3] that can cause a loss of DPS fo
 
 In short, **munching** happens for the most part in 2 scenarios:
 
-1. Living Bomb explosion crits at the same time as a projectile crits (fireball, frostfirebolt, or pyroblast).
+1. Living Bomb explosion crits at the same time or extremely close to a projectile critting (fireball, frostfirebolt, or pyroblast).
     - Ignite from the Living Bomb explosion gets munched. 
 
-2. A Pyroblast crits immediately after a projectile crits (fireball or frostfirebolt) .
+2. A Pyroblast crits immediately after or extremely close to another projectile crits (fireball or frostfirebolt).
     - Ignite from the projectile before the pyroblast will be munched.
 
 ### How to (workaround) "munching"?
@@ -101,6 +103,10 @@ This bug has been discussed in an [ElitistJerk forum thread in 2008 [1]](https:/
 Additionally, a brief explanation of the bug can be found in the [wow wiki section for Ignite Bugs, under the section "Known Bugs"](https://wowwiki-archive.fandom.com/wiki/Ignite_(old)#Past_changes). 
 
 Unlike "Ignite Munching", which has a section named for its own in the wiki, Ignite Vomit is simply described in one paragraph as something that can happen, but that should not be confused with the old "rolling" ignite system from pre-2.0 (known to us as "Classic").
+
+### When is "vomit"?
+
+Vomit occurs when a spell crits as the same time (or extremely close) to an ignite tick.
 
 Figure 1: Example of a vomit scenario. The spell before ignite crits/lands on the same timestamp as the ignite, according to logs.[3]
 
