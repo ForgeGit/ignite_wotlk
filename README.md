@@ -27,27 +27,39 @@ The following is a collection of brief analyses conducted as part of an effort t
 
 ### What is "munching"?
 
-Ignite munching is a __well-documented bug [1,2,3] that can cause a loss of DPS__ for Fire Mages due to how spell interactions work. 
+Ignite munching is a well-documented bug [1,2,3] that can cause a loss of DPS for Fire Mages due to how spell interactions work. 
 
-In short, **munching** happens in mostly 2 scenarios:
+### When is "munching"?
 
-1. Living Bomb explosion crits while a Fireball or Frostfire Bolt crit is landing or another crit is happening.
+In short, **munching** happens for the most part in 2 scenarios:
+
+1. Living Bomb explosion crits at the same time as a projectile crits (fireball, frostfirebolt, or pyroblast).
     - Ignite from the Living Bomb explosion gets munched. 
 
-2. Cast Pyroblast immediately after a Fireball (Hot Streak) and both are crits when landing.
-    - Ignite from the fireball will be munched 
+2. A Pyroblast crits immediately after a projectile crits (fireball or frostfirebolt) .
+    - Ignite from the projectile before the pyroblast will be munched.
 
-Scenario #2 is more frequently observed among TTW Mages because they mainly cast fireball (ofc!) 
+### How to (workaround) "munching"?
 
-Frostfire bolt has a different travel time, making it less likely to happen. It CAN and WILL happen, but less often and rarer.
+Unless you are a TTW mage, there is not much you can do about it.
 
-The effects of this bug on TTW mages can be mitigated by using WAs and macros. 
+Because of how projectile travel times work, scenario #2 is more frequently observed among TTW Mages, with fireball having a different travel time compared to frostfire bolt.
+
+The effects of munching on TTW mages can be mitigated by using WAs and macros, making it less likely to happen. 
 You can check the FAQ or the commands "!munch" and "!fuckmunch" on [Mage Discord](https://discord.gg/eszwRckRmA) for more details.
 
+However, **munching will STILL happen**, with or without weakauras, and regardless of spec (TTW or FFB).
+
+To the best of our knowledge, this won't be fixed, but you can make yourself heard in the Blizzard Forums by making a post/thread about it.
+
+### Examples of munching
+
 Figure 1: Example of a munching scenario 1. [4]
+
 <img src="img/munch_example.png" />
 
 Figure 2: Example of a munching scenario 1. Different spell [5]
+
 <img src="img/munch_example.png" />
 
 1.- [Ignite munching on its way out, one way or another February 23, 2011 ](https://www.engadget.com/2011-02-23-ignite-munching-on-its-way-out-one-way-or-another.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAD4s-zDY_aUerkO-18-cyhJQcrgeH8xubvmt371MBNuirIY9RqM4OMzpJpGb3Br798GnMxzw88aoKIwsa_BxHZ_ugd1B1hlkzZ7tW-8JqjSfmm2iLa_mik77fB3SBlYBlYYV73NCN7fBqA0yqsc_bQV-K2xutXyaVFT5x-8HaLlO)
