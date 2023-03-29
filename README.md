@@ -13,8 +13,13 @@ The following is a collection of brief analyses conducted as part of an effort t
 
 # Table of Contents
 
-1. [Munching: The hidden DPS loss on your Ignite](#munching---the-hidden-dps-loss-of-ignite) <br>
+1. [Munching: The hidden DPS loss on your Ignite](#munching---the-hidden-dps-loss-of-ignite)<br>
+    1.1. [What is "munching"?](#what-is-munching)<br>
+    1.2. [When is "munching"?](#when-is-munching) <br>
+    1.3. [How to (workaround) "munching"?](#how-to-workaround-munching) <br>
+    1.4. [Examples of munching](#examples-of-munching) <br>
 2. [Vomit: When Ignite goes wrong for the best](#deaths) <br>
+    1.1. [What is "vomit"?](#what-is-munching)<br>
 3. [The vomit window](#interru)<br>
 4. [Anonymized Raid Deaths Report](#dea)<br>
 
@@ -77,6 +82,12 @@ Figure 2: Example of a munching scenario 1. Different spell [5]
 
 ## Vomit: When Ignite goes wrong for the best
 
+#### **Tl,dr:** 
+
+<ins> Ignite **vomit**</ins> happens randomly to your ignite damage, and <ins>it is a DPS gain</ins>. Intentionally manipulating this bug in our favor seems unrealistic, if not impossible, until someone can replicate it consistently. 
+
+### What is "vomit"?
+
 A less well-documented Ignite bug in Wrath of the Lich King is the opposite of Ignite Munch (from now on, "Ignite Vomit"), which allows an ignite to keep rolling and result in an additional tick that should not have occurred.
 
 Until recently (at the moment of writing), this bug had not been documented or described at all for Wrath of the Lich King Classic.
@@ -89,7 +100,7 @@ This bug has been discussed in an [ElitistJerk forum thread in 2008 [1]](https:/
 
 Additionally, a brief explanation of the bug can be found in the [wow wiki section for Ignite Bugs, under the section "Known Bugs"](https://wowwiki-archive.fandom.com/wiki/Ignite_(old)#Past_changes). 
 
-Unlike "Ignite Munching", which has a section named for its own in the wiki, Ignite Vomit is just described in a one paragraph as something that can happen, but that should not be confused with the old "rolling" ignite system from pre-2.0 (known to us as "Classic").
+Unlike "Ignite Munching", which has a section named for its own in the wiki, Ignite Vomit is simply described in one paragraph as something that can happen, but that should not be confused with the old "rolling" ignite system from pre-2.0 (known to us as "Classic").
 
 Figure 1: Example of a vomit scenario. The spell before ignite crits/lands on the same timestamp as the ignite, according to logs.[3]
 
@@ -101,11 +112,12 @@ Figure 2: Example of a vomit scenario.  The spell before ignite crits/lands 28ms
 
 ### Practical example
 
-The following log has a practical irl example of this bug ocurring
-https://classic.warcraftlogs.com/reports/a:mZaNPdTgzLFBVW8K#fight=3&type=damage&source=14&target=123&view=events
-(log shared by @Redteam#9819 in #🐲sim-and-log-review )
+[The following log has a practical example, from figure 2,](https://classic.warcraftlogs.com/reports/a:mZaNPdTgzLFBVW8K#fight=3&type=damage&source=14&target=123&view=events) of vomit ocurring "naturally"
+
+(log shared by @Redteam#9819 in #🐲sim-and-log-review at Mage Discord long ago, and taken as an example after a vomit event was discovered months later)
 
 00:39.416 seconds into the log the following happens
+
 ```
 1.- Ignite tick for 6687
 
@@ -113,6 +125,7 @@ https://classic.warcraftlogs.com/reports/a:mZaNPdTgzLFBVW8K#fight=3&type=damage&
 [adds to ignite: 7984 * 0.4 = 3193] 
 expected ignite tick: (6687+3193) / 2 =  4939
 
+Immediately after the fireball:
 3.- Ignite ticks for 6687
 
 4.- Living bomb crits for 2007 
@@ -124,14 +137,26 @@ expected ignite tick: (6687+3193) / 2 =  4939
 6.- Ignite ticks for 7220
 ```
 To get a 7220 ignite tick you would need an ignite of 14440, which is only possible if the following happened:
- 3193 (From 2.- Fireball) + 802 (From 4.- LB) + 3757 (From 5.- FB) + 6686 (From 3.- IG due to "Vomit")
+
+3193 (From 2.- Fireball) + 802 (From 4.- LB) + 3757 (From 5.- FB) + 6686 (From 3.- IG due to "Vomit")
 
 Doing :
+
 **(A)** 802 (4.- LB) + 3757 (5.- FB) + 3193 (2.- FB)  = 7752 / 2 = 3876
+
 or
+
 **(B)** 802 (4.- LB) + 3757 (5.- FB) + 6686 (3.- IG)  = 11245/ 2 = 5622
 
 Do not get close to the 7220 ignite tick seen in the log
+
+### Additional examples
+
+Another example can be seen (here [6]:)[https://classic.warcraftlogs.com/reports/64xjRNaFgtr3Qd9b#fight=5&type=damage&source=9&phase=2&target=97&view=events]
+
+At the ignites that happen at 02:30.103, 02:32.086 and 02:34.105, with a vomit event happening 02:30.082
+
+<img src="img/vomit_example_3.png" />
 
 
 ### References
@@ -143,6 +168,10 @@ Do not get close to the 7220 ignite tick seen in the log
 3.- [Algalon encounter used for figure 1](https://classic.warcraftlogs.com/reports/WKhF9jBXbQ4MRwnx#fight=17&view=events&source=7&type=damage-done&eventstart=2790468)
 
 4.- [Patchwerk encounter used for figure 1](https://classic.warcraftlogs.com/reports/a:mZaNPdTgzLFBVW8K#fight=3&type=damage&source=14&target=123&view=events)
+
+5.- [Practical example log #1](https://classic.warcraftlogs.com/reports/a:mZaNPdTgzLFBVW8K#fight=3&type=damage&source=14&target=123&view=events)
+
+6.- [Practical example log #2](https://classic.warcraftlogs.com/reports/64xjRNaFgtr3Qd9b#fight=5&type=damage&source=9&phase=2&target=97&view=events)
 
 # Other analysis done
 
