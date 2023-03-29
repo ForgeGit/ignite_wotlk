@@ -10,8 +10,9 @@ The following is a collection of brief analyses conducted as part of an effort t
 
 ### ADDED VALUE 
 
-- There is a second bug related to ignite, named in here as ignite vomit, which results in a gain of DPS.
+- There is a second bug related to ignite, named in here as ignite vomit, which in a vacuum can result in a gain of DPS.
 - We confirmed munching is a much bigger problem for TTW mages compared to FFB.
+- Across all mages, the negatives effects of "munching" are less severe than expected due to "vomit". But "munching" is still very much a problem.
 - The window for an ignite vomit to happen is <40ms and has a ~30% rate of ocurring.
 
 ### IMPLICATIONS
