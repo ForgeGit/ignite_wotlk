@@ -33,6 +33,7 @@ The following is a collection of brief analyses conducted as part of an effort t
     2.2. [When is "vomit"?](#when-is-vomit) <br>
     2.3. [Example of vomit 1](#practical-example) <br>
     2.4. [Example of vomit 2](#additional-examples) <br>
+    2.5. [Partial vomit?](#additional-examples) <br>
     
 3. [Quantifying ignite damage](#quantifying-ignite-damage)  <br>
     3.1. [Part 1 - The ignite formula](#part-1---the-ignite-formula) <br> 
@@ -219,6 +220,12 @@ At the ignites that happen at 02:30.103, 02:32.086 and 02:34.105, with a vomit e
 
 <img src="img/vomit_example_3.png" />
 
+### Partial Vomit?
+
+In the cases seen before, the ignites affected by vomit "add up" towards the subsequent ignites. In some cases, the ignite affected by vomit doesn't "add up", but does continue to "roll". 
+
+The specifics behind this are poorly understood or poorly summarized so far. 
+
 
 ### References
 
@@ -239,7 +246,7 @@ At the ignites that happen at 02:30.103, 02:32.086 and 02:34.105, with a vomit e
 #### **Tl,dr:** 
 
 TTW Mages are disproportionally affected by ignite munching when compared to FFB mages. 
-On nearly ~50% of all fights, your ignite damage will be doing less than expected. 
+On ~50% of all fights, your ignite damage will be doing less damage than expected. 
 
 ### Part 1 - The ignite formula
 
@@ -345,9 +352,43 @@ For now, we know it is at least <40ms, don't worry about it.
 
 ## Things not yet answered
 
-# Compare non CQS/Macro/WA users vs CQS/Macro/WA users (only for TTW)
-# Quantify and compare the actual damage lost and damage gained from munching/vomit ("On average, a mage loses xX,XXX damage from mmunching")
-# Develop tool to analyze individual logs (in-progress)
+- Compare non CQS/Macro/WA users vs CQS/Macro/WA users (only for TTW)
+
+- Quantify and compare the actual damage lost and damage gained from munching/vomit ("On average, a mage loses xX,XXX damage from mmunching")
+
+- Develop tool to analyze individual logs (in-progress)
+
+## Naming conventions
+
+##### The name for "Ignite Vomit" came to me in a dream while high on substances other than water. 
+
+##### The sim implementation currently uses the term "bleeding".
+
+<img src="img/bleeding.png" />
+
+##### The OG Wrath name was simply "ignite rolling" although it was sometimes confused and mixed with the "Classic" ignite rolling.
+
+##### Ignite Bouncing
+
+##### Ignite Edging 
+
+##### Spectral Ignite
+
+##### Ignite Duping
+
+##### Ignite Echo
+
+##### Ignite Dipping
+
+##### Ignite Weaving
+
+##### Ignite [CENSORED]
+
+##### Ignite Fission
+
+##### Ignite Spraying
+
+##### Ignite Milking 
 
 # Other analysis done
 
