@@ -36,9 +36,9 @@ The following is a collection of brief analyses conducted as part of an effort t
     2.4. [Example of vomit 2](#additional-examples) <br>
     
 3. [Quantifying ignite damage](#quantifying-ignite-damage)  <br>
-    3.1. [Part 1 - The ignite formula](#ignite-101) <br> 
-    3.2. [Part 2 - Ignite chunks](#ignite-101) <br> 
-    3.3. [Ignite, munching and vomit basic interactions](#ignite-munching-and-vomit-basic-interactions) <br>   
+    3.1. [Part 1 - The ignite formula](#part-1---the-ignite-formula) <br> 
+    3.2. [Part 2 - Ignite chunks](#part-2---ignite-chunks) <br> 
+    3.3. [Part 3 - Ignite, munching and vomit basic interactions](#part-3---ignite-munching-and-vomit-basic-interactions) <br>   
 
 3. [The vomit window](#interru)<br>
 4. [Anonymized Raid Deaths Report](#dea)<br>
@@ -246,11 +246,11 @@ Your total ignite damage will be the result of several ignites (chunks)
 
 <img src="img/ignite6.png" />
 
-Here you can see in the following log 7 ignite chunks during the encounter.
+Here you can see in the following log seven (7) ignite chunks during a single encounter.
 
 <img src="img/ignite7.png" />
 
-### Ignite, munching and vomit basic interactions
+### Part 3: Ignite, munching, and vomit basic interactions
 
 The following is a simplified example of how much our ignite damage would be if:
 
@@ -269,6 +269,18 @@ This results in the following gains and loses
 <img src="img/ignite_comparison2.png" />
 
 <ins>In a vacuum</ins> where munching and vomit have the same odds of happening and both happen roughly at the same rate, <ins>the total ignite damage would be less than what it would have been if no bugs (ignite or vomit) had been present.</ins> 
+
+### Part 4: Measuring ignite across logs
+
+Given the above, we can:
+
+- Extract several logs from lumberjack website
+- Include only boss encounters (exclude trash)
+- Filter for only mages
+- Extract all the damage events dealt by those mages
+- Calculate the ignite damage dealt
+- Calculate the total critical damage dealt
+
 
 
 
