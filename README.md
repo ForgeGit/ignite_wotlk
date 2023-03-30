@@ -204,9 +204,7 @@ At the ignites that happen at 02:30.103, 02:32.086 and 02:34.105, with a vomit e
 
 ## Quantifying ignite damage
 
-### Ignite 101
-
-#### Part 1 - The ignite formula
+### Part 1 - The ignite formula
 
 Ignite in its most simple definition, is a flat 40% of your critical damage. 
 
@@ -240,7 +238,7 @@ This means in practice, our total ignite damage can be seen as:
 
 <img src="img/ignite4.png" />
 
-#### Part 2 - Ignite chunks 
+### Part 2 - Ignite chunks 
 
 Your ignite damage is made of several ignites, from now on "ignite chunks".
 
