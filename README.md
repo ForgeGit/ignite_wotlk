@@ -28,7 +28,7 @@ The following is a collection of brief analyses conducted as part of an effort t
     1.2. [When is "munching"?](#when-is-munching) <br>
     1.3. [How to (workaround) "munching"?](#how-to-workaround-munching) <br>
     1.4. [Examples of munching](#examples-of-munching) <br>
-    1.5. [Other munching sources](#examples-of-munching) <br>
+    1.5. [Other munching sources](#other-munching-sources) <br>
     
 2. [Vomit: When Ignite goes wrong for the best](#deaths) <br>
     2.1. [What is "vomit"?](#what-is-vomit)<br>
@@ -39,11 +39,10 @@ The following is a collection of brief analyses conducted as part of an effort t
 3. [Quantifying ignite damage](#quantifying-ignite-damage)  <br>
     3.1. [Part 1 - The ignite formula](#part-1---the-ignite-formula) <br> 
     3.2. [Part 2 - Ignite chunks](#part-2---ignite-chunks) <br> 
-    3.3. [Part 3 - Ignite, munching and vomit basic interactions](#part-3---ignite-munching-and-vomit-basic-interactions) <br>   
+    3.3. [Part 3 - Ignite, munching and vomit basic interactions](#part-3---ignite-munching-and-vomit-basic-interactions) <br> 
+    3.3. [Part 4 - Measuring ignite across logs](#part-4---measuring-ignite-across-logs) <br>   
 
-4. [The vomit window](#interru)<br>
-
-
+4. [The vomit window](#the-vomit-window)<br>
 
 ## Munching: The DPS missing from your ignite
 
@@ -255,7 +254,7 @@ Here you can see in the following log seven (7) ignite chunks during a single en
 
 <img src="img/ignite7.png" />
 
-### Part 3: Ignite, munching, and vomit basic interactions
+### Part 3 - Ignite, munching, and vomit basic interactions
 
 The following is a simplified example of how much our ignite damage would be if:
 
@@ -275,7 +274,7 @@ This results in the following gains and loses
 
 <ins>In a vacuum</ins> where munching and vomit have the same odds of happening and both happen roughly at the same rate, <ins>the total ignite damage would be less than what it would have been if no bugs (ignite or vomit) had been present.</ins> 
 
-### Part 4: Measuring ignite across logs
+### Part 4 - Measuring ignite across logs
 
 Given the above, we can:
 
@@ -302,10 +301,11 @@ Around ~50% of the time, a fire mage will be dealing less damage than what it wa
 
 Fights where fire mages are doing less ignite damage than expected are more frequently observed on Fireball Mages (TTW) than Frostfire Bolt Mages (FFB). 
 
+<img src="img/fig4.png" />
 
 ## The vomit window
 
-For now, we know it is at leas <40ms, don't worry about it.
+For now, we know it is at least <40ms, don't worry about it.
 
 # Other analysis done
 
