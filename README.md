@@ -15,7 +15,7 @@ The following is a collection of brief analyses conducted as part of an effort t
 - Ignite Vomit has a "success rate"" of approximately 30% anytime a spell crits within a window of less than 40 milliseconds before the next ignite.
 
 ### IMPLICATIONS
-- The Mage Sim has been updated to include an option for ignite vomit (a.k.a. bleeding).
+- The Mage Sim has been updated to include an option for ignite vomit (a.k.a. bleeding). [Thanks [Osthy](https://github.com/Cheesehyvel/magesim-wotlk)]
 - Ongoing efforts are being made to consistently replicate and induce ignite vomits in a real scenario, however, it is highly unlikely they will have any practical use.
 - Through our analyses, we have gained a greater understanding of Fire Mage Ignite damage, the associated bugs, and their impact on our DPS.
 
