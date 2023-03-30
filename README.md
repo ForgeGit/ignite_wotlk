@@ -23,7 +23,7 @@ The following is a collection of brief analyses conducted as part of an effort t
 
 # Table of Contents
 
-1. [Munching: The DPS missing from your Ignite](#       )<br>
+1. [Munching: The DPS missing from your Ignite](#munching-the-dps-missing-from-your-ignite)<br>
     1.1. [What is "munching"?](#what-is-munching)<br>
     1.2. [When is "munching"?](#when-is-munching) <br>
     1.3. [How to (workaround) "munching"?](#how-to-workaround-munching) <br>
@@ -32,7 +32,8 @@ The following is a collection of brief analyses conducted as part of an effort t
 2. [Vomit: When Ignite goes wrong for the best](#deaths) <br>
     1.1. [What is "vomit"?](#what-is-vomit)<br>
     1.2. [When is "vomit"?](#when-is-vomit) <br>
-    1.4. [Examples of munching](#examples-of-vomit) <br>
+    1.3. [Example of vomit 1](#practical-example) <br>
+    1.4. [Example of vomit 2](#additional-examples) <br>
     
 3. [Quantifying ignite damage]()     
 
@@ -118,6 +119,11 @@ Additionally, a brief explanation of the bug can be found in the [wow wiki secti
 
 Unlike "Ignite Munching", which has a section named for its own in the wiki, Ignite Vomit is simply described in one paragraph as something that can happen, but that should not be confused with the old "rolling" ignite system from pre-2.0 (known to us nowadays as "Classic").
 
+
+<img src="img/no_stack.png" />
+Unlike Classic ignites, post-classic ignites have "no stacks" (and do not "roll" as before)
+
+
 ### When is "vomit"?
 
 Vomit occurs when a spell crits as the same time (or extremely close) to an ignite tick.
@@ -193,8 +199,44 @@ At the ignites that happen at 02:30.103, 02:32.086 and 02:34.105, with a vomit e
 
 6.- [Practical example log #2](https://classic.warcraftlogs.com/reports/64xjRNaFgtr3Qd9b#fight=5&type=damage&source=9&phase=2&target=97&view=events)
 
+## Quantifying ignite damage
+
+Ignite in its most simple definition, is a flat 40% of your critical damage. 
+
+Doesn't matter how many times you refresh ignite, how long ignite lasts, or how big ignite gets, it should always be 40% of your critical damage dealt.
+
+<img src="img/ignite1.png" />
+
+If we add up 40% of each critical damage, the sum of that should be our total ignite damage.
+
+<img src="img/ignite2.png" />
+
+If you crit for a total of 50,000 damage, your total ignite dmg will be 20,000.
+
+<img src="img/ignite3.png" />
+
+This in a vacuum is true, except when the mob dies before ignite has time to tick, resulting in "lost" ignite damage.
+
+If you crit for 10,000 1 second before the boss dies, your 4,000 ignite won't have 4 seconds to tick twice (2s for each tick). You "lost" this ignite damage.
+
+This means in practice, our total ignite damage can be seen as:
+
+<img src="img/ignite4.png" />
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+++++++++++++++++++++++++++++++++++
 
 # Ignite measurements
 
