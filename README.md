@@ -217,7 +217,9 @@ If you crit for a total of 50,000 damage, your total ignite dmg will be 20,000.
 
 <img src="img/ignite3.png" />
 
-This in a vacuum  works flawlessly, because ignite will always have time to tick in an infinite timeline. In reality, a mob can die before an ignite has time to tick, resulting in "lost" ignite damage.
+This <ins>in a vacuum</ins> works flawlessly, because <ins>ignite will always have time to tick</ins> in an infinite timeline. 
+
+<ins>In reality, a mob can die before an ignite has time to tick</ins>, resulting in "lost" ignite damage from an ignite .
 
 (is it really lost if you never really had the chance to actually use it?)
 
