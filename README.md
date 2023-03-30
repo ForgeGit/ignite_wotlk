@@ -223,7 +223,8 @@ This <ins>in a vacuum</ins> works flawlessly, because <ins>ignite will always ha
 
 *(is it really lost if you never really had the chance to actually use it?)*
 
-If you crit for 10,000 1 second before the boss dies, your 4,000 ignite won't have 4 seconds to tick twice (2s for each tick). 
+If you crit for 5,000 1 second before the boss dies, your 2,000 ignite won't have 4 seconds to tick twice (2s for each tick).
+
 You "lost" this ignite damage.
 
 <img src="img/ignite5.png" />
@@ -233,7 +234,7 @@ This means in practice, our total ignite damage can be seen as:
 <img src="img/ignite4.png" />
 
 
-### Ignite and its bugs
+### Ignite, munching and vomit basic interactions
 
 The following is a simplified example of how much our ignite damage would be if:
 
@@ -251,15 +252,7 @@ This results in the following gains and loses
 
 <img src="img/ignite_comparison2.png" />
 
-In an hypothetical scenario where munching and vomit have the same odds of happening and both happen roughly at the same rate, the total ignite damage is less than what it would have been if no bugs (ignite or vomit) had been present. 
-
-
-
-
-
-++++++++++++++++++++++++++++++++++
-
-# Ignite measurements
+<ins>In a vacuum</ins> where munching and vomit have the same odds of happening and both happen roughly at the same rate, <ins>the total ignite damage would be less than what it would have been if no bugs (ignite or vomit) had been present.</ins> 
 
 
 
