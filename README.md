@@ -1,6 +1,6 @@
 # Everything about ignite, I guess
 
-The following is a collection of brief analyses conducted as part of an effort to gain a better understanding of the bugs (Munching and Vomit) associated with Ignite, which have been a persistent and significant issue for Fire Mages in both the Classic version and the original Wrath of the Lich King.
+The following is a collection of brief analyses conducted as part of an effort to gain a better understanding of the bugs (Munching and Vomit<sup>disputed,7,8,9,10,11</sup>) associated with Ignite, which have been a persistent and significant issue for Fire Mages in both the Classic version and the original Wrath of the Lich King (OG Wrath).
 
 ## GENERAL TL;DR
 
@@ -41,6 +41,8 @@ The following is a collection of brief analyses conducted as part of an effort t
     3.3. [Part 4 - Measuring ignite across logs](#part-4---measuring-ignite-across-logs) <br>   
 
 4. [The vomit window](#the-vomit-window)<br>
+
+5. [Vomit naming conventions](#the-vomit-window)<br>
 
 ## Munching: The DPS missing from your ignite
 
@@ -85,9 +87,34 @@ Figure 2: Example of a munching scenario 1. Different spell [5]
 
 <img src="img/munch_example_2.png" />
 
+Figure 3: Example of a munching scenario 2. [6]
+
+<img src="img/munch_example_3.png" />
+
 ### Other munching sources
 
-WIP
+Some boss mechanics will also "munch" your ignite damage. 
+
+This type of munch should NOT be confused to the one caused by your spells critting too close to each other
+
+Figure 4: Sartharion becomes immune and consumes the ignite damage, rendering it null. 
+
+<img src="img/Sartharion_munch.png" />
+
+
+- <ins>**Kologarn:**</ins> While gripped, your ignites might be getting "munched" - Highly likely but not fully confirmed
+
+- <ins>**Ignis:**</ins> Slag pot munches hot streaks. Probably ignites too but not confirmed.
+
+- <ins>**XT heart:**</ins> Heart phase munching ignites <ins>is confirmed.</ins>
+
+- <ins>**Sartharion:**</ins> Immune phase munching ignites <ins>is confirmed.</ins>
+
+
+Figure 5: XT Heart phase "munching" an ignite - The ignite from the Living Bomb crit never gets to tick
+
+<img src="img/XT_example.png" />
+
 
 ### References
 
@@ -101,6 +128,7 @@ WIP
 
 5.- [Algalon encounter used for figure 2](https://classic.warcraftlogs.com/reports/FamxdM3W94RBTY87#fight=52&type=damage-done&source=19&view=events)
 
+6.- [Another Algalon encounter for figure 3](https://classic.warcraftlogs.com/reports/pjxTCMtQk9c7d2ar#fight=16&type=damage-done&source=6&target=147&view=events&options=2)
 
 ## Vomit: When Ignite goes wrong for the best
 
@@ -110,7 +138,7 @@ WIP
 
 ### What is "vomit"?
 
-A less well-documented Ignite bug in Wrath of the Lich King is the opposite of Ignite Munching (from now on, "Ignite Vomit"<sup>disputed,7,8,9,10,11</sup>), which allows an ignite to keep rolling and result in an additional tick that should not have occurred.
+A less well-documented Ignite bug in Wrath of the Lich King is the opposite of Ignite Munching (from now on, "Ignite Vomit"), which allows an ignite to keep rolling and result in an additional tick that should not have occurred.
 
 Until recently (at the moment of writing), this bug had not been documented or described at all for Wrath of the Lich King Classic.
 
@@ -275,7 +303,7 @@ This results in the following gains and loses
 
 <img src="img/ignite_comparison2.png" />
 
-<ins>In a vacuum</ins> where munching and vomit have the same odds of happening and both happen roughly at the same rate, <ins>the total ignite damage would be less than what it would have been if no bugs (ignite or vomit) had been present.</ins> 
+<ins>In a vacuum</ins> where munching and vomit have the same odds of happening and both happen roughly at the same rate, <ins>the total ignite damage would be less than what it would have been if no bugs (ignite and vomit) had been present.</ins> 
 
 ### Part 4 - Measuring ignite across logs
 
@@ -315,7 +343,9 @@ For now, we know it is at least <40ms, don't worry about it.
 
 ## Things not yet answered
 
-Compare non CQS/Macro/WA users vs CQS/Macro/WA users (only for TTW)
+# Compare non CQS/Macro/WA users vs CQS/Macro/WA users (only for TTW)
+# Quantify and compare the actual damage lost and damage gained from munching/vomit ("On average, a mage loses xX,XXX damage from mmunching")
+# Develop tool to analyze individual logs (in-progress)
 
 # Other analysis done
 
