@@ -36,8 +36,9 @@ The following is a collection of brief analyses conducted as part of an effort t
     2.4. [Example of vomit 2](#additional-examples) <br>
     
 3. [Quantifying ignite damage](#quantifying-ignite-damage)  <br>
-    3.1. [Ignite 101](#ignite-101) <br>   
-    3.2. [Ignite, munching and vomit basic interactions](#ignite-munching-and-vomit-basic-interactions) <br>   
+    3.1. [Part 1 - The ignite formula](#ignite-101) <br> 
+    3.2. [Part 2 - Ignite chunks](#ignite-101) <br> 
+    3.3. [Ignite, munching and vomit basic interactions](#ignite-munching-and-vomit-basic-interactions) <br>   
 
 3. [The vomit window](#interru)<br>
 4. [Anonymized Raid Deaths Report](#dea)<br>
@@ -205,9 +206,13 @@ At the ignites that happen at 02:30.103, 02:32.086 and 02:34.105, with a vomit e
 
 ### Ignite 101
 
+#### Part 1 - The ignite formula
+
 Ignite in its most simple definition, is a flat 40% of your critical damage. 
 
-Doesn't matter how many times you refresh ignite, how long ignite lasts, or how big ignite gets, it should always be 40% of your critical damage dealt.
+This is one of the reasons why more crit and bigger crit = bigger ignite and bigger damage. 
+
+Doesn't matter how many times you refresh ignite, how long ignite lasts, or how big ignite gets, it should always be 40% of your spell's direct critical damage dealt.
 
 <img src="img/ignite1.png" />
 
@@ -221,7 +226,7 @@ If you crit for a total of 50,000 damage, your total ignite dmg will be 20,000.
 
 This <ins>in a vacuum</ins> works flawlessly, because <ins>ignite will always have time to tick</ins> in an infinite timeline. 
 
-<ins>In reality, a mob can die before an ignite has time to tick</ins>, resulting in "lost" ignite damage from an ignite .
+<ins>In reality, because all the ignite damage is not done up front, a mob can die before an ignite has time to tick</ins>, resulting in "lost" ignite damage from an ignite .
 
 *(is it really lost if you never really had the chance to actually use it?)*
 
@@ -235,6 +240,17 @@ This means in practice, our total ignite damage can be seen as:
 
 <img src="img/ignite4.png" />
 
+#### Part 2 - Ignite chunks 
+
+Your ignite damage is made of several ignites, from now on "ignite chunks".
+
+Your total ignite damage will be the result of several ignites (chunks)
+
+<img src="img/ignite6.png" />
+
+Here you can see in the following log 7 ignite chunks during the encounter.
+
+<img src="img/ignite7.png" />
 
 ### Ignite, munching and vomit basic interactions
 
