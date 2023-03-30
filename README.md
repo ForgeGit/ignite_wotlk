@@ -43,9 +43,11 @@ The following is a collection of brief analyses conducted as part of an effort t
 
 4. [The vomit window](#the-vomit-window)<br>  
 
-5. [Next steps](#the-vomit-window)<br>
+5. [Inducing Vomit](#the-vomit-window)<br>  
 
-6. [Vomit naming conventions](#the-vomit-window)<br>
+6. [Next steps](#the-vomit-window)<br>
+
+7. [Vomit naming conventions](#the-vomit-window)<br>
 
 ## Munching: The DPS missing from your ignite
 
@@ -245,8 +247,11 @@ The specifics behind this are poorly understood or poorly summarized so far.
 
 #### **Tl,dr:** 
 
-TTW Mages are disproportionally affected by ignite munching when compared to FFB mages. 
-On ~50% of all fights, your ignite damage will be doing less damage than expected. 
+TTW Mages are disproportionally affected by ignite munching when compared to FFB mages.
+
+On ~50% of fights, your ignite damage will be doing less damage than what it should. (More munch than vomit)
+
+On ~10% of fights, your ignite damage will be doing more damage than what it should. (More vomit than munch)
 
 ### Part 1 - The ignite formula
 
@@ -338,7 +343,7 @@ In total, for the following analysis we have data on:
 
 <img src="img/fig2.png" />
 
-Around ~50% of the time, a fire mage will be dealing less damage than what it was suppose to do through ignite. 
+In about ~40% of fights, a fire mage will be dealing less ignite damage than what it was suppose to do. 
 
 <img src="img/fig3.png" />
 
@@ -346,19 +351,57 @@ Fights where fire mages are doing less ignite damage than expected are more freq
 
 <img src="img/fig4.png" />
 
+**How to read this graphic:** At the end of a fight, a mage ignite damage should have dealt roughly 40% of their total critical damage. 
+
+If they did more than 40%, they did MORE than the expected (blue).
+
+If they did lesss than 40%, they did LESS than the expected (red). 
+
+The image shows that roughly 50% of the time, a Fireball Mage will be dealing less ignite damage than expected (red area). 
+
+On the contrary, a FFB mage will usually be doing the expected damage (yellow area).
+
+This does NOT mean FFB is instantly better than TTW. You should always sim this for your own raid and gear conditions.
+
+### Part 5 - Understanding the measurement
+
+XT having a disproportional less ignite damage on average compared to other fights could be explained by "heart munching".
+
+Algalon however is an outlier not yet explained. 
+
+- One explanation is the sample size being small (figure above). 
+
+- Another one could be that being inside the black hole is causing "munching", and crits while inside or during hole transitions are somehow bugging ignite. (From Exo#1191)
+
+- Another hypothesis is that "algalon is only killed by better players (generally speaking), and theyre most likely to press fucking pyro just fine, instead of having 0.5s delay because their kid is screaming and their beer is all over keyboard" (From Chaotic#3768)
+
+- A weird overlap between mages killing Algalon and swapping spec specifically for it that forgot to macro their Weakauras keybinds?
+
 ## The vomit window
 
 For now, we know it is at least <40ms, don't worry about it.
 
-## Things not yet answered
+## Inducing Vomit
+
+For now, to the best of my knowledge, we do not have a lot of data on a controlled environment (target dummy, Dr. Boom) to further test Ignite Vomit on-demand.
+
+Some tests have been done, but haven't been extensive and their conclusion was that an ignite vomit did not happen 100% of the time even if inside the 40ms vomit window.
+
+<img src="img/reproducing_vomit.png" />
+
+In theory, the above setting should provide a good starting point. Similar specs and setups had been discussed in the OG EJ forum thread of 2008. 
+
+## Things not yet answered (Next Steps)
 
 - Compare non CQS/Macro/WA users vs CQS/Macro/WA users (only for TTW)
 
 - Quantify and compare the actual damage lost and damage gained from munching/vomit 
 
-"On average, a mage loses xX,XXX damage from munching"
+    - "On average, a mage loses XX,XXX damage from munching"
 
 - Develop tool to analyze individual logs (in-progress)
+
+- Can we fully induce vomit in a controlled environment?
 
 ## Naming conventions
 
