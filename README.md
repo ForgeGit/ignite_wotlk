@@ -9,14 +9,14 @@ The following is a collection of brief analyses conducted as part of an effort t
 - Fire Mages (TTW and FFB) are losing DPS due to ignite munching.
 
 ### WHAT WE KNOW NOW
-
+[CURRENTLY WORK IN PROGRESS]
 - There is a second bug, referred in here as ignite vomit, which in a vacuum results in a DPS gain.
 - We confirmed munching is a much bigger problem for TTW mages compared to FFB.
 - Across all mages, the negatives effects of "munching" are less severe than expected due to "vomit". But "munching" is still very much a problem.
-- The window for an ignite vomit to happen is <40ms and has a ~30% rate of ocurring.
+- The window for an ignite vomit to happen is <40ms and has around a ~30% rate of ocurring.
 
 ### IMPLICATIONS
-
+[CURRENTLY WORK IN PROGRESS]
 - The Mage Sim has been updated to include an option for vomit (a.k.a. bleeding).
 - Attempts at consistently replicating and generating vomits in a real setting are currently underway.
 - We have a broader understanding of fire mage ignite damage, its bugs, and how they affect us.
@@ -28,6 +28,7 @@ The following is a collection of brief analyses conducted as part of an effort t
     1.2. [When is "munching"?](#when-is-munching) <br>
     1.3. [How to (workaround) "munching"?](#how-to-workaround-munching) <br>
     1.4. [Examples of munching](#examples-of-munching) <br>
+    1.5. [Other munching sources](#examples-of-munching) <br>
     
 2. [Vomit: When Ignite goes wrong for the best](#deaths) <br>
     2.1. [What is "vomit"?](#what-is-vomit)<br>
@@ -40,8 +41,8 @@ The following is a collection of brief analyses conducted as part of an effort t
     3.2. [Part 2 - Ignite chunks](#part-2---ignite-chunks) <br> 
     3.3. [Part 3 - Ignite, munching and vomit basic interactions](#part-3---ignite-munching-and-vomit-basic-interactions) <br>   
 
-3. [The vomit window](#interru)<br>
-4. [Anonymized Raid Deaths Report](#dea)<br>
+4. [The vomit window](#interru)<br>
+
 
 
 ## Munching: The DPS missing from your ignite
@@ -86,6 +87,10 @@ Figure 1: Example of a munching scenario 1. [4]
 Figure 2: Example of a munching scenario 1. Different spell [5]
 
 <img src="img/munch_example_2.png" />
+
+### Other munching sources
+
+WIP
 
 ### References
 
@@ -274,16 +279,29 @@ This results in the following gains and loses
 
 Given the above, we can:
 
-- Extract several logs from lumberjack website
-- Include only boss encounters (exclude trash)
-- Filter for only mages
-- Extract all the damage events dealt by those mages
-- Calculate the ignite damage dealt
-- Calculate the total critical damage dealt
+1. Extract several logs from lumberjack website
+2. Include only boss encounters (exclude trash)
+3. Filter for only mages
+4. Extract all the damage events dealt by those mages
+5. Calculate the ignite damage dealt
+6. Calculate the total critical damage dealt
+7. Calculate the ignite damage of the last ignite chunk
 
+And with it, find out wheter mages are on average dealing their expected ignite damage, or find out if that ignite damage is being "vomited" or "munched".
 
+In total, for the following analysis we have data on:
+- 1,649 Logs
+- 12,786 Boss Fights
+- 20,738 Mages
 
+<img src="img/fig2.png" />
 
+Around ~50% of the time, a fire mage will be dealing less damage than what it was suppose to do through ignite. 
+
+<img src="img/fig3.png" />
+## The vomit window
+
+For now, we know it is at leas <40ms, don't worry about it.
 
 # Other analysis done
 
