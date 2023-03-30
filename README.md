@@ -354,13 +354,17 @@ For now, we know it is at least <40ms, don't worry about it.
 
 - Compare non CQS/Macro/WA users vs CQS/Macro/WA users (only for TTW)
 
-- Quantify and compare the actual damage lost and damage gained from munching/vomit ("On average, a mage loses xX,XXX damage from mmunching")
+- Quantify and compare the actual damage lost and damage gained from munching/vomit 
+
+"On average, a mage loses xX,XXX damage from munching"
 
 - Develop tool to analyze individual logs (in-progress)
 
 ## Naming conventions
 
 ##### The name for "Ignite Vomit" came to me in a dream while high on substances other than water. 
+
+<img src="img/OG_post.png" />
 
 ##### The sim implementation currently uses the term "bleeding".
 
