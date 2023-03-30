@@ -101,7 +101,7 @@ Figure 2: Example of a munching scenario 1. Different spell [5]
 
 #### **Tl,dr:** 
 
-<ins> Ignite **vomit**</ins> happens randomly to your ignite damage, and it <ins>is a DPS gain</ins>. Intentionally manipulating this bug in our favor seems unrealistic, if not impossible, until someone can replicate it consistently AND demonstrate it can be used in a real scenario. 
+<ins> Ignite **vomit**</ins><sup>disputed,7,8,9,10,11</sup> happens randomly to your ignite damage, and it <ins>is a DPS gain</ins>. Intentionally manipulating this bug in our favor seems unrealistic, if not impossible, until someone can replicate it consistently AND demonstrate it can be used in a real scenario. 
 
 ### What is "vomit"?
 
