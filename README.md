@@ -30,12 +30,14 @@ The following is a collection of brief analyses conducted as part of an effort t
     1.4. [Examples of munching](#examples-of-munching) <br>
     
 2. [Vomit: When Ignite goes wrong for the best](#deaths) <br>
-    1.1. [What is "vomit"?](#what-is-vomit)<br>
-    1.2. [When is "vomit"?](#when-is-vomit) <br>
-    1.3. [Example of vomit 1](#practical-example) <br>
-    1.4. [Example of vomit 2](#additional-examples) <br>
+    2.1. [What is "vomit"?](#what-is-vomit)<br>
+    2.2. [When is "vomit"?](#when-is-vomit) <br>
+    2.3. [Example of vomit 1](#practical-example) <br>
+    2.4. [Example of vomit 2](#additional-examples) <br>
     
-3. [Quantifying ignite damage]()     
+3. [Quantifying ignite damage](#quantifying-ignite-damage)  <br>
+    3.1. [Ignite 101](#ignite-101) <br>   
+    3.2. [Ignite, munching and vomit basic interactions](#ignite-munching-and-vomit-basic-interactions) <br>   
 
 3. [The vomit window](#interru)<br>
 4. [Anonymized Raid Deaths Report](#dea)<br>
@@ -101,11 +103,11 @@ Figure 2: Example of a munching scenario 1. Different spell [5]
 
 #### **Tl,dr:** 
 
-<ins> Ignite **vomit**</ins><sup>disputed,7,8,9,10,11</sup> happens randomly to your ignite damage, and it <ins>is a DPS gain</ins>. Intentionally manipulating this bug in our favor seems unrealistic, if not impossible, until someone can replicate it consistently AND demonstrate it can be used in a real scenario. 
+<ins> Ignite **vomit**</ins> happens randomly to your ignite damage, and it <ins>is a DPS gain</ins>. Intentionally manipulating this bug in our favor seems unrealistic, if not impossible, until someone can replicate it consistently AND demonstrate it can be used in a real scenario. 
 
 ### What is "vomit"?
 
-A less well-documented Ignite bug in Wrath of the Lich King is the opposite of Ignite Munch (from now on, "Ignite Vomit"), which allows an ignite to keep rolling and result in an additional tick that should not have occurred.
+A less well-documented Ignite bug in Wrath of the Lich King is the opposite of Ignite Munching (from now on, "Ignite Vomit"<sup>disputed,7,8,9,10,11</sup>), which allows an ignite to keep rolling and result in an additional tick that should not have occurred.
 
 Until recently (at the moment of writing), this bug had not been documented or described at all for Wrath of the Lich King Classic.
 
