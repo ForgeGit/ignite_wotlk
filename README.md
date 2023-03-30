@@ -1,6 +1,6 @@
 # Everything about ignite, I guess
 
-The following is a collection of brief analyses conducted as part of an effort to gain a better understanding of the bugs associated with Ignite (Munching and Vomit).
+The following is a collection of brief analyses conducted as part of an effort to gain a better understanding of the bugs (Munching and Vomit) associated with Ignite, which have been a persistent and significant issue for Fire Mages in both the Classic version and the original Wrath of the Lich King.
 
 ## GENERAL TL;DR
 
