@@ -223,7 +223,8 @@ This <ins>in a vacuum</ins> works flawlessly, because <ins>ignite will always ha
 
 *(is it really lost if you never really had the chance to actually use it?)*
 
-If you crit for 10,000 1 second before the boss dies, your 4,000 ignite won't have 4 seconds to tick twice (2s for each tick). You "lost" this ignite damage.
+If you crit for 10,000 1 second before the boss dies, your 4,000 ignite won't have 4 seconds to tick twice (2s for each tick). 
+You "lost" this ignite damage.
 
 <img src="img/ignite5.png" />
 
