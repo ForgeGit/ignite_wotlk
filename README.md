@@ -6,20 +6,18 @@ The following is a collection of brief analyses conducted as part of an effort t
 
 ### WHAT WE KNEW BEFORE THIS
 
-- Fire Mages (TTW and FFB) are losing DPS due to ignite munching.
+- Fire Mages, both those who use Fireball (TTW) and those who use Frostfire Bolt (FFB) are losing DPS due to ignite munching.
 
 ### WHAT WE KNOW NOW
-[CURRENTLY WORK IN PROGRESS]
-- There is a second bug, referred in here as ignite vomit, which in a vacuum results in a DPS gain.
-- We confirmed munching is a much bigger problem for TTW mages compared to FFB.
-- Across all mages, the negatives effects of "munching" are less severe than expected due to "vomit". But "munching" is still very much a problem.
-- The window for an ignite vomit to happen is <40ms and has around a ~30% rate of ocurring.
+- There is a second bug, referred in here as ignite vomit, which in a vacuum can result in a DPS gain.
+- We can objectively show munching is a significantly greater issue for TTW Mages than FFB Mages.
+- Although the negative effects of ignite munching are slightly less severe than what we expected due to Ignite Vomit, ignite munching remains a significant issue for all Fire Mages.
+- Ignite Vomit has a "success rate"" of approximately 30% anytime a spell crits within a window of less than 40 milliseconds before the next ignite.
 
 ### IMPLICATIONS
-[CURRENTLY WORK IN PROGRESS]
-- The Mage Sim has been updated to include an option for vomit (a.k.a. bleeding).
-- Attempts at consistently replicating and generating vomits in a real setting are currently underway.
-- We have a broader understanding of fire mage ignite damage, its bugs, and how they affect us.
+- The Mage Sim has been updated to include an option for ignite vomit (a.k.a. bleeding).
+- Ongoing efforts are being made to consistently replicate and induce ignite vomits in a real scenario, however, it is highly unlikely they will have any practical use.
+- Through our analyses, we have gained a greater understanding of Fire Mage Ignite damage, the associated bugs, and their impact on our DPS.
 
 # Table of Contents
 
@@ -48,7 +46,7 @@ The following is a collection of brief analyses conducted as part of an effort t
 
 #### **Tl,dr:** 
 
-<ins> Ignite **munching**</ins> happens randomly to your ignite damage, and it <ins>is a DPS loss</ins>. More frequent on TTW Mages than FFB mages. As TTW, you can minimize its effects with a WA and/or a macro.
+<ins> Ignite **munching**</ins> will sometimes happen to your ignite damage, and it <ins>is a DPS loss</ins>. More frequent on TTW Mages than FFB mages. As TTW, you can minimize its effects with a WA and/or a macro.
 
 ### What is "munching"?
 
@@ -108,7 +106,7 @@ WIP
 
 #### **Tl,dr:** 
 
-<ins> Ignite **vomit**</ins> happens randomly to your ignite damage, and it <ins>is a DPS gain</ins>. Intentionally manipulating this bug in our favor seems unrealistic, if not impossible, until someone can replicate it consistently AND demonstrate it can be used in a real scenario. 
+<ins> Ignite **vomit**</ins> will sometimes happen to your ignite damage, and it <ins>is a DPS gain</ins>. Intentionally manipulating this bug in our favor seems unrealistic, if not impossible, until someone can induce it consistently AND demonstrate it can be used in a real scenario. 
 
 ### What is "vomit"?
 
@@ -208,6 +206,11 @@ At the ignites that happen at 02:30.103, 02:32.086 and 02:34.105, with a vomit e
 
 ## Quantifying ignite damage
 
+#### **Tl,dr:** 
+
+TTW Mages are disproportionally affected by ignite munching when compared to FFB mages. 
+On nearly ~50% of all fights, your ignite damage will be doing less than expected. 
+
 ### Part 1 - The ignite formula
 
 Ignite in its most simple definition, is a flat 40% of your critical damage. 
@@ -276,17 +279,20 @@ This results in the following gains and loses
 
 ### Part 4 - Measuring ignite across logs
 
-Given the above, we can:
+Given the above, we can calculate the ignite damage expected vs the actual ignite damage done across several logs with the following conditions:
 
 1. Extract several logs from lumberjack website
 2. Include only boss encounters (exclude trash)
 3. Filter for only mages
 4. Extract all the damage events dealt by those mages
-5. Calculate the ignite damage dealt
-6. Calculate the total critical damage dealt
-7. Calculate the ignite damage of the last ignite chunk
 
-And with it, find out wheter mages are on average dealing their expected ignite damage, or find out if that ignite damage is being "vomited" or "munched".
+Then, we can estimate:
+
+5. The total ignite damage dealt.
+6. The total critical damage dealt.
+7. The ignite damage lost on the last ignite chunk.
+
+And with it, find out whether mages are on average dealing their expected ignite damage, or find out if that ignite damage is being "vomited" or "munched".
 
 In total, for the following analysis we have data on:
 - 1,649 Logs
@@ -306,6 +312,10 @@ Fights where fire mages are doing less ignite damage than expected are more freq
 ## The vomit window
 
 For now, we know it is at least <40ms, don't worry about it.
+
+## Things not yet answered
+
+Compare non CQS/Macro/WA users vs CQS/Macro/WA users (only for TTW)
 
 # Other analysis done
 
