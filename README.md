@@ -221,7 +221,7 @@ This <ins>in a vacuum</ins> works flawlessly, because <ins>ignite will always ha
 
 <ins>In reality, a mob can die before an ignite has time to tick</ins>, resulting in "lost" ignite damage from an ignite .
 
-(is it really lost if you never really had the chance to actually use it?)
+*(is it really lost if you never really had the chance to actually use it?)*
 
 If you crit for 10,000 1 second before the boss dies, your 4,000 ignite won't have 4 seconds to tick twice (2s for each tick). You "lost" this ignite damage.
 
