@@ -299,6 +299,10 @@ In total, for the following analysis we have data on:
 Around ~50% of the time, a fire mage will be dealing less damage than what it was suppose to do through ignite. 
 
 <img src="img/fig3.png" />
+
+Fights where fire mages are doing less ignite damage than expected are more frequently observed on Fireball Mages (TTW) than Frostfire Bolt Mages (FFB). 
+
+
 ## The vomit window
 
 For now, we know it is at leas <40ms, don't worry about it.
