@@ -27,6 +27,7 @@ The following is a collection of brief analyses conducted as part of an effort t
     1.3. [How to (workaround) "munching"?](#how-to-workaround-munching) <br>
     1.4. [Examples of munching](#examples-of-munching) <br>
     1.5. [Other munching sources](#other-munching-sources) <br>
+    1.5. [Other munching analogies](#other-munching-analogies) <br>
     
 2. [Vomit: When Ignite goes wrong for the best](#deaths) <br>
     2.1. [What is "vomit"?](#what-is-vomit)<br>
@@ -47,7 +48,9 @@ The following is a collection of brief analyses conducted as part of an effort t
 
 6. [Next steps](#the-vomit-window)<br>
 
-7. [Vomit naming conventions](#the-vomit-window)<br>
+A. [Other ignite analogies](#the-vomit-window)<br>
+
+B. [Vomit naming conventions](#the-vomit-window)<br>
 
 ## Munching: The DPS missing from your ignite
 
@@ -119,7 +122,6 @@ Figure 4: Sartharion becomes immune and consumes the ignite damage, rendering it
 Figure 5: XT Heart phase "munching" an ignite - The ignite from the Living Bomb crit never gets to tick
 
 <img src="img/XT_example.png" />
-
 
 ### References
 
@@ -402,6 +404,14 @@ In theory, the above setting should provide a good starting point. Similar specs
 - Develop tool to analyze individual logs (in-progress)
 
 - Can we fully induce vomit in a controlled environment?
+
+## Other ignite analogies
+
+Still having issues understanding ignite? Here are other ways to understand what is ignite: 
+
+<img src="img/analogy1.png" />
+
+<img src="img/analogy2.png" />
 
 ## Naming conventions
 
