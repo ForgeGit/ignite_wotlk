@@ -320,6 +320,10 @@ This results in the following gains and loses
 
 <ins>In a vacuum</ins> where munching and vomit have the same odds of happening and both happen roughly at the same rate, <ins>the total ignite damage would be less than what it would have been if no bugs (ignite and vomit) had been present.</ins> 
 
+Following the formulas above, it would look something like this:
+
+<img src="img/ignite8.png" />
+
 ### Part 4 - Measuring ignite across logs
 
 Given the above, we can calculate the ignite damage expected vs the actual ignite damage done across several logs with the following conditions:
