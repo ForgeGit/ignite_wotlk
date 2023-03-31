@@ -19,37 +19,37 @@ The following is a collection of brief analyses conducted as part of an effort t
 - Ongoing efforts are being made to consistently replicate and induce ignite vomits in a real scenario, however, it is highly unlikely they will have any practical use.
 - Through our analyses, we have gained a greater understanding of Fire Mage Ignite damage, the associated bugs, and their impact on our DPS.
 
-# Table of Contents
+# Table of Contents 📜
 
-1. [Munching: The DPS missing from your Ignite](#munching-the-dps-missing-from-your-ignite)<br>
+1. [Munching: The DPS missing from your Ignite](#-munching-the-dps-missing-from-your-ignite-)<br>
     1.1. [What is "munching"?](#what-is-munching)<br>
     1.2. [When is "munching"?](#when-is-munching) <br>
     1.3. [How to (workaround) "munching"?](#how-to-workaround-munching) <br>
     1.4. [Examples of munching](#examples-of-munching) <br>
     1.5. [Other munching sources](#other-munching-sources) <br>
 
-2. [Vomit: When Ignite goes wrong for the best](#deaths) <br>
+2. [Vomit: When Ignite goes wrong for the best](#-vomit-when-ignite-goes-wrong-for-the-best-) <br>
     2.1. [What is "vomit"?](#what-is-vomit)<br>
     2.2. [When is "vomit"?](#when-is-vomit) <br>
     2.3. [Example of vomit 1](#practical-example) <br>
     2.4. [Example of vomit 2](#additional-examples) <br>
     2.5. [Partial vomit?](#additional-examples) <br>
     
-3. [Quantifying ignite damage](#quantifying-ignite-damage)  <br>
+3. [Quantifying ignite damage](#-quantifying-ignite-damage-)  <br>
     3.1. [Part 1 - The ignite formula](#part-1---the-ignite-formula) <br> 
     3.2. [Part 2 - Ignite chunks](#part-2---ignite-chunks) <br> 
     3.3. [Part 3 - Ignite, munching and vomit basic interactions](#part-3---ignite-munching-and-vomit-basic-interactions) <br> 
     3.4. [Part 4 - Measuring ignite across logs](#part-4---measuring-ignite-across-logs) <br>   
 
-4. [The vomit window](#the-vomit-window)<br>  
+4. [The vomit window](#the-vomit-window-%EF%B8%8F)<br>  
 
-5. [Inducing Vomit](#the-vomit-window)<br>  
+5. [Inducing Vomit](#inducing-vomit-)<br>  
 
-6. [Next steps](#the-vomit-window)<br>
+6. [Next steps](#things-not-yet-answered-next-steps)<br>
 
-A. [Other ignite analogies](#the-vomit-window)<br>
+    A. [Other ignite analogies](#other-ignite-analogies)<br>
 
-B. [Vomit naming conventions](#the-vomit-window)<br>
+    B. [Vomit naming conventions](#naming-conventions)<br>
 
 ## 🔥 Munching: The DPS missing from your ignite 🔥 
 
