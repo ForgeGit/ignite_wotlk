@@ -136,7 +136,7 @@ Figure 5: XT Heart phase "munching" an ignite - The ignite from the Living Bomb 
 
 6.- [Another Algalon encounter for figure 3](https://classic.warcraftlogs.com/reports/pjxTCMtQk9c7d2ar#fight=16&type=damage-done&source=6&target=147&view=events&options=2)
 
-## Vomit: When Ignite goes wrong for the best
+## 🤮 Vomit: When Ignite goes wrong for the best 🤮
 
 #### **Tl,dr:** 
 
@@ -244,7 +244,7 @@ The specifics behind this are poorly understood or poorly summarized so far.
 
 6.- [Practical example log #2](https://classic.warcraftlogs.com/reports/64xjRNaFgtr3Qd9b#fight=5&type=damage&source=9&phase=2&target=97&view=events)
 
-## Quantifying ignite damage
+## 📈 Quantifying ignite damage 📉
 
 #### **Tl,dr:** 
 
@@ -378,11 +378,11 @@ Algalon however is an outlier not yet explained.
 
 - A weird overlap between mages killing Algalon and swapping spec specifically for it that forgot to macro their Weakauras keybinds?
 
-## The vomit window
+## The vomit window 🕵️
 
 For now, we know it is at least <40ms, don't worry about it.
 
-## Inducing Vomit
+## Inducing Vomit 🔬
 
 For now, to the best of my knowledge, we do not have a lot of data on a controlled environment (target dummy, Dr. Boom) to further test Ignite Vomit on-demand.
 
