@@ -51,7 +51,7 @@ A. [Other ignite analogies](#the-vomit-window)<br>
 
 B. [Vomit naming conventions](#the-vomit-window)<br>
 
-## Munching: The DPS missing from your ignite
+## 🔥 Munching: The DPS missing from your ignite 🔥 
 
 #### **Tl,dr:** 
 
