@@ -27,8 +27,7 @@ The following is a collection of brief analyses conducted as part of an effort t
     1.3. [How to (workaround) "munching"?](#how-to-workaround-munching) <br>
     1.4. [Examples of munching](#examples-of-munching) <br>
     1.5. [Other munching sources](#other-munching-sources) <br>
-    1.5. [Other munching analogies](#other-munching-analogies) <br>
-    
+
 2. [Vomit: When Ignite goes wrong for the best](#deaths) <br>
     2.1. [What is "vomit"?](#what-is-vomit)<br>
     2.2. [When is "vomit"?](#when-is-vomit) <br>
