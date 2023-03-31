@@ -336,7 +336,7 @@ Given the above, we can calculate the ignite damage expected vs the actual ignit
 Then, we can estimate:
 
 5. The total ignite damage dealt.
-6. The total critical damage dealt.
+6. The total critical damage dealt (and with it the total ignite damage "expected").
 7. The ignite damage lost on the last ignite chunk.
 
 And with it, find out whether mages are on average dealing their expected ignite damage, or find out if that ignite damage is being "vomited" or "munched".
