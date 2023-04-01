@@ -396,6 +396,12 @@ Some tests have been done, but haven't been extensive and their conclusion was t
 
 In theory, the above setting should provide a good starting point. Similar specs and setups had been discussed in the OG EJ forum thread of 2008. 
 
+31th of March, another setup used and recorded [in this log](https://classic.warcraftlogs.com/reports/H2ZdNB7QRaW6n94y/#type=damage-done&fight=1&source=12&view=events), used the following:
+
+<img src="img/reproducing2.png" />
+
+
+
 ## Things not yet answered (Next Steps)
 
 - Compare non CQS/Macro/WA users vs CQS/Macro/WA users (only for TTW)
