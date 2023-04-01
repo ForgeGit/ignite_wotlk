@@ -288,6 +288,9 @@ This means in practice, our total ignite damage can be seen as:
 
 <img src="img/ignite4.png" />
 
+From now on, this will be our "expected ignite damage" or ignite damage dealt. The formula will account for the damage that may have been "lost"" if the boss died early.
+
+
 ### Part 2 - Ignite chunks 
 
 Your ignite damage is made of several ignites, from now on "ignite chunks".
@@ -356,7 +359,13 @@ Fights where fire mages are doing less ignite damage than expected are more freq
 
 <img src="img/fig4.png" />
 
-**How to read this graphic:** At the end of a fight, a mage ignite damage should have dealt roughly 40% of their total critical damage. 
+**How to read this graphic:** 
+
+A Fire Mage's Ignite damage is expected to make up around 40% of their total critical damage by the end of a fight. ("Ignite Damage Dealt")
+
+If their Ignite damage exceeds this value, they have performed better than expected (represented by blue). Conversely, if their Ignite damage is less than 40%, they have underperformed (represented by red). Based on the image, it appears that approximately 50% of the time, a Fireball Mage will generate less Ignite damage than expected (indicated by the red area). In contrast, a FFB mage will typically generate the expected amount of damage (represented by the yellow area). However, it's important to note that this does not necessarily mean that FFB is always superior to TTW, and it's advisable to simulate the scenario for your own raid and gear conditions.
+
+At the end of a fight, a Fire Mage ignite damage should have dealt roughly 40% of their total critical damage. 
 
 If they did more than 40%, they did MORE than the expected (blue).
 
