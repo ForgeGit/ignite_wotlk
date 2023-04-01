@@ -6,18 +6,18 @@ The following is a collection of brief analyses conducted as part of an effort t
 
 ### WHAT WE KNEW BEFORE THIS
 
-- Fire Mages, both those who use Fireball (TTW) and those who use Frostfire Bolt (FFB) are losing DPS due to ignite munching.
+- Fire Mages are losing DPS due to ignite munching, affecting both Fireball (TTW) and Frostfire Bolt (FFB) Mages.
 
 ### WHAT WE KNOW NOW
-- There is a second bug, referred in here as ignite vomit, which in a vacuum can result in a DPS gain.
-- We can objectively show munching is a significantly greater issue for TTW Mages than FFB Mages.
-- Although the negative effects of ignite munching are slightly less severe than what we expected due to Ignite Vomit, ignite munching remains a significant issue for all Fire Mages.
-- Ignite Vomit has a "success rate"" of approximately 30% anytime a spell crits within a window of less than 40 milliseconds before the next ignite.
+- Ignite vomit is a second bug that can result in a DPS gain in certain circumstances.
+- We have a measure of how much more prevalent is munching among TTW Mages than FFB Mages.
+- Despite the existence of Ignite Vomit, ignite munching remains a significant issue for all Fire Mages.
+- Ignite Vomit has a "success rate" of around 30% when a spell crits within a 40ms window before the next ignite tick.
 
 ### IMPLICATIONS
 - The Mage Sim has been updated to include an option for ignite vomit (a.k.a. bleeding). [Thanks [Osthy](https://github.com/Cheesehyvel/magesim-wotlk)]
 - Ongoing efforts are being made to consistently replicate and induce ignite vomits in a real scenario, however, it is highly unlikely they will have any practical use.
-- Through our analyses, we have gained a greater understanding of Fire Mage Ignite damage, the associated bugs, and their impact on our DPS.
+- Through our analyses, we have gained a greater understanding of Fire Mage Ignite damage, the associated bugs, and their impact on Fire Mage DPS.
 
 # Table of Contents 📜
 
