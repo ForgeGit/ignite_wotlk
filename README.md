@@ -362,7 +362,7 @@ Fights where fire mages are doing less ignite damage than expected are more freq
 
 **How to read this graphic:** 
 
-A Fire Mage's Ignite damage is expected to make up around 40% of their total critical damage by the end of a fight. ("Ignite Damage Dealt" or "Expected")
+A Fire Mage's Ignite damage is expected to make up around 40% of their total critical damage by the end of a fight. ("Ignite Damage Dealt" or "Expected", represented by orange)
 
 If their Ignite damage exceeds this value (more ignite than expected), they have performed better than expected (represented by blue). 
 
