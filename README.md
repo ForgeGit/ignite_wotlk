@@ -361,21 +361,17 @@ Fights where fire mages are doing less ignite damage than expected are more freq
 
 **How to read this graphic:** 
 
-A Fire Mage's Ignite damage is expected to make up around 40% of their total critical damage by the end of a fight. ("Ignite Damage Dealt")
+A Fire Mage's Ignite damage is expected to make up around 40% of their total critical damage by the end of a fight. ("Ignite Damage Dealt" or "Expected")
 
-If their Ignite damage exceeds this value, they have performed better than expected (represented by blue). Conversely, if their Ignite damage is less than 40%, they have underperformed (represented by red). Based on the image, it appears that approximately 50% of the time, a Fireball Mage will generate less Ignite damage than expected (indicated by the red area). In contrast, a FFB mage will typically generate the expected amount of damage (represented by the yellow area). However, it's important to note that this does not necessarily mean that FFB is always superior to TTW, and it's advisable to simulate the scenario for your own raid and gear conditions.
+If their Ignite damage exceeds this value (more ignite than expected), they have performed better than expected (represented by blue). 
 
-At the end of a fight, a Fire Mage ignite damage should have dealt roughly 40% of their total critical damage. 
+Conversely, if their Ignite damage is less than 40% (less ignite than expected), they have underperformed (represented by red). 
 
-If they did more than 40%, they did MORE than the expected (blue).
+Based on the image, it appears that approximately 50% of the time, a Fireball Mage will generate less Ignite damage than expected (indicated by the red area). 
 
-If they did lesss than 40%, they did LESS than the expected (red). 
+In contrast, a FFB mage will typically generate the expected amount of damage (represented by the yellow area). 
 
-The image shows that roughly 50% of the time, a Fireball Mage will be dealing less ignite damage than expected (red area). 
-
-On the contrary, a FFB mage will usually be doing the expected damage (yellow area).
-
-This does NOT mean FFB is instantly better than TTW. You should always sim this for your own raid and gear conditions.
+**It's important to note that this does not mean that FFB is better than TTW, you should ALWAYS sim the scenario for your own raid, fights and gear conditions.**
 
 ### Part 5 - Understanding the measurement
 
