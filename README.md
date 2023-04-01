@@ -39,7 +39,7 @@ The following is a collection of brief analyses conducted as part of an effort t
     3.1. [Part 1 - The ignite formula](#part-1---the-ignite-formula) <br> 
     3.2. [Part 2 - Ignite chunks](#part-2---ignite-chunks) <br> 
     3.3. [Part 3 - Ignite, munching and vomit basic interactions](#part-3---ignite-munching-and-vomit-basic-interactions) <br> 
-    3.4. [Part 4 - Measuring ignite across logs](#part-4---measuring-ignite-across-logs) <br>  
+    3.4. [Part 4 - Measuring ignite across logs](#part-4---measuring-ignite-across-logs) <br>
     3.5. [Part 5 - EXPLANATION: Understanding the measurement](#part-5---understanding-the-measurement) <br>  
     
 4. [The vomit window](#the-vomit-window-%EF%B8%8F)<br>  
