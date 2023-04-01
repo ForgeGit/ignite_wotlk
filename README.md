@@ -375,17 +375,17 @@ In contrast, a FFB mage will typically generate the expected amount of damage (r
 
 ### Part 5 - Understanding the measurement
 
-XT having a disproportional less ignite damage on average compared to other fights could be explained by "heart munching".
+On average, XT seems to have lower ignite damage compared to other fights, which could be attributed to "heart munching." 
 
-Algalon however is an outlier not yet explained. 
+Algalon low ignite damage stands out as an unexplained outlier. There are a few possible explanations for this:
 
-- One explanation is the sample size being small (figure above). 
+- Small sample size of data collected from this fight. It almost reaches a total of 300 kills, compared to the 1k kills on other fights. 
 
-- Another one could be that being inside the black hole is causing "munching", and crits while inside or during hole transitions are somehow bugging ignite. (From Exo#1191)
+- Another possibility is that being inside the black hole causes "munching," and ignite crits during these transitions are bugged in some way (as suggested by Exo#1191). 
 
-- Another hypothesis is that "algalon is only killed by better players (generally speaking), and theyre most likely to press fucking pyro just fine, instead of having 0.5s delay because their kid is screaming and their beer is all over keyboard" (From Chaotic#3768)
+- Another hypothesis is that better players tend to kill Algalon and are less likely to experience delays or distractions while casting spells such as Pyroblast. Or as it was stated, "algalon is only killed by better players (generally speaking), and theyre most likely to press fucking pyro just fine, instead of having 0.5s delay because their kid is screaming and their beer is all over keyboard" (From Chaotic#3768)
 
-- A weird overlap between mages killing Algalon and swapping spec specifically for it that forgot to macro their Weakauras keybinds?
+- Possibility is a strange overlap between mages killing Algalon and swapping specs specifically for this fight, which may have caused them to forget to macro their WeakAuras keybinds.
 
 ## The vomit window 🕵️
 
