@@ -249,11 +249,11 @@ The specifics behind this are poorly understood or poorly summarized so far.
 
 #### **Tl,dr:** 
 
-TTW Mages are disproportionally affected by ignite munching when compared to FFB mages.
+Compared to FFB mages, TTW mages are more significantly impacted by ignite munching.
 
-On ~50% of fights, your ignite damage will be doing less damage than what it should. (More munch than vomit)
+On approximately 50% of fights, ignite damage for TTW mages will fall short of expected damage. This indicates a higher incidence of munching.
 
-On ~10% of fights, your ignite damage will be doing more damage than what it should. (More vomit than munch)
+On roughly 10% of fights, ignite damage for TTW mages exceeds expected damage. However, for FFB mages, this number is even higher, reaching almost 20% on certain fights. This suggests a higher occurrence of vomit for FFB mages.
 
 ### Part 1 - The ignite formula
 
