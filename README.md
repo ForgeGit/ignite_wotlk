@@ -1,4 +1,6 @@
 # Everything about ignite, I guess
+_Vivax (Pagle-US) - Forge#0001_
+
 
 The following is a collection of brief analyses conducted as part of an effort to gain a better understanding of the bugs (Munching and Vomit<sup>[disputed](#naming-conventions),[1](#ignite-bouncing),[2](#ignite-edging),[3](#spectral-ignite),[4](#ignite-duping),[5](#ignite-echo),[6](#ignite-dipping)</sup>) associated with Ignite, which have been a persistent and significant issue for Fire Mages in both the Classic version and the original Wrath of the Lich King (OG Wrath).
 
