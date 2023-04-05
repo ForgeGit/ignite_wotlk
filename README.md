@@ -392,6 +392,10 @@ Algalon low ignite damage stands out as an unexplained outlier. There are a few 
 
 For now, we know it is at least <40ms, don't worry about it.
 
+The data seems to suggest 40% of criticals hitting within that window of 40ms will result in vomit. Why 40%? seems like whether it happening on 1st or 2nd tick of ignite matter + just the fact that logs aren't perfect timestamps.
+
+
+
 ## Inducing Vomit 🔬
 
 For now, to the best of my knowledge, we do not have a lot of data on a controlled environment (target dummy, Dr. Boom) to further test Ignite Vomit on-demand.
@@ -400,11 +404,19 @@ Some tests have been done, but haven't been extensive and their conclusion was t
 
 <img src="img/reproducing_vomit.png" />
 
-In theory, the above setting should provide a good starting point. Similar specs and setups had been discussed in the OG EJ forum thread of 2008. 
+In theory, the above setting should provide a good starting point (by zero#8418). Similar specs and setups had been discussed in the OG EJ forum thread of 2008. 
 
-March 31st: Another setup used and recorded [in this log](https://classic.warcraftlogs.com/reports/H2ZdNB7QRaW6n94y/#type=damage-done&fight=1&source=12&view=events), used the following:
+March 31st: Another setup used and recorded [in this log](https://classic.warcraftlogs.com/reports/H2ZdNB7QRaW6n94y/#type=damage-done&fight=1&source=12&view=events), used the following (by alaxel#7627):
 
 <img src="img/reproducing2.png" />
+
+Basically, the rotation to test is "CoC weaving".
+
+<img src="img/cocweaving.png" />
+
+There is also a 5 minutes Dr. Boom scorch test here by "Art of pvp#7868":
+
+https://classic.warcraftlogs.com/reports/YF3nZ9RLCXrzNfMd/#fight=last&type=damage-done&source=2&view=events
 
 
 
