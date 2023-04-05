@@ -1,6 +1,6 @@
 # Everything about ignite, I guess
 
-The following is a collection of brief analyses conducted as part of an effort to gain a better understanding of the bugs (Munching and Vomit<sup>[disputed](#what-is-munching),[1](#ignite-bouncing),[2](#ignite-edging),[3](#spectral-ignite),[4](#ignite-duping),[5](#ignite-echo),[6](#ignite-dipping)</sup>) associated with Ignite, which have been a persistent and significant issue for Fire Mages in both the Classic version and the original Wrath of the Lich King (OG Wrath).
+The following is a collection of brief analyses conducted as part of an effort to gain a better understanding of the bugs (Munching and Vomit<sup>[disputed](#naming-conventions),[1](#ignite-bouncing),[2](#ignite-edging),[3](#spectral-ignite),[4](#ignite-duping),[5](#ignite-echo),[6](#ignite-dipping)</sup>) associated with Ignite, which have been a persistent and significant issue for Fire Mages in both the Classic version and the original Wrath of the Lich King (OG Wrath).
 
 ## GENERAL TL;DR
 
@@ -26,14 +26,14 @@ The following is a collection of brief analyses conducted as part of an effort t
     1.2. [When is "munching"?](#when-is-munching) <br>
     1.3. [How to (workaround) "munching"?](#how-to-workaround-munching) <br>
     1.4. [Examples of munching](#examples-of-munching) <br>
-    1.5. [Other munching sources](#other-munching-sources) <br>
+    1.5. [Other munching sources (XT, Sarth and others)](#other-munching-sources) <br>
 
 2. [Vomit: When Ignite goes wrong for the best](#-vomit-when-ignite-goes-wrong-for-the-best-) <br>
     2.1. [What is "vomit"?](#what-is-vomit)<br>
     2.2. [When is "vomit"?](#when-is-vomit) <br>
     2.3. [Example of vomit 1](#practical-example) <br>
     2.4. [Example of vomit 2](#additional-examples) <br>
-    2.5. [Partial vomit?](#additional-examples) <br>
+    2.5. [Partial vomit?](#partial-vomit) <br>
     
 3. [Quantifying ignite damage](#-quantifying-ignite-damage-)  <br>
     3.1. [Part 1 - The ignite formula](#part-1---the-ignite-formula) <br> 
@@ -228,7 +228,7 @@ At the ignites that happen at 02:30.103, 02:32.086 and 02:34.105, with a vomit e
 
 In the cases seen before, the ignites affected by vomit "add up" towards the subsequent ignites. In some cases, the ignite affected by vomit doesn't "add up", but does continue to "roll". 
 
-The specifics behind this are poorly understood or poorly summarized so far. 
+The specifics behind this are poorly understood or poorly summarized so far. [You can take a look at The Vomit Window for more details](the-vomit-window-%EF%B8%8F)
 
 
 ### References
