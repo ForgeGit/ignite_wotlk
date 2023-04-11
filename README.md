@@ -21,6 +21,9 @@ The following is a collection of brief analyses conducted as part of an effort t
 - Ongoing efforts are being made to consistently replicate and induce ignite vomits in a real scenario, however, it is highly unlikely they will have any practical use.
 - Through our analyses, we have gained a greater understanding of Fire Mage Ignite damage, the associated bugs, and their impact on Fire Mage DPS.
 
+### Update Apr 11th, 2023
+- Ignite analyzer app: https://wotlk-mage.herokuapp.com/
+
 # Table of Contents 📜
 
 1. [Munching: The DPS missing from your Ignite](#-munching-the-dps-missing-from-your-ignite-)<br>
