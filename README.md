@@ -4,6 +4,12 @@ _Vivax (Pagle-US) - Forge#0001_
 
 The following is a collection of brief analyses conducted as part of an effort to gain a better understanding of the bugs (Munching and Vomit<sup>[disputed](#naming-conventions),[1](#ignite-bouncing),[2](#ignite-edging),[3](#spectral-ignite),[4](#ignite-duping),[5](#ignite-echo),[6](#ignite-dipping)</sup>) associated with Ignite, which have been a persistent and significant issue for Fire Mages in both the Classic version and the original Wrath of the Lich King (OG Wrath).
 
+### Update Apr 11th, 2023
+- Ignite analyzer app: https://wotlk-mage.herokuapp.com/
+
+EDIT: As of April 11, it has been announced munching might (will?) be "fixed".
+https://us.forums.blizzard.com/en/wow/t/wotlk-stealth-change-to-feral/1566375/5
+
 ## GENERAL TL;DR
 
 ### WHAT WE KNEW BEFORE THIS
@@ -20,9 +26,6 @@ The following is a collection of brief analyses conducted as part of an effort t
 - The Mage Sim has been updated to include an option for ignite vomit (a.k.a. bleeding). [Thanks [Osthy](https://github.com/Cheesehyvel/magesim-wotlk)]
 - Ongoing efforts are being made to consistently replicate and induce ignite vomits in a real scenario, however, it is highly unlikely they will have any practical use.
 - Through our analyses, we have gained a greater understanding of Fire Mage Ignite damage, the associated bugs, and their impact on Fire Mage DPS.
-
-### Update Apr 11th, 2023
-- Ignite analyzer app: https://wotlk-mage.herokuapp.com/
 
 # Table of Contents 📜
 
@@ -88,7 +91,10 @@ You can check the FAQ or the commands "!munch" and "!fuckmunch" on [Mage Discord
 
 However, **munching will STILL happen**, with or without weakauras, and regardless of spec (TTW or FFB).
 
-To the best of our knowledge, this won't be fixed, but you can make yourself heard in the Blizzard Forums by making a post/thread about it.
+~~To the best of our knowledge, this won't be fixed, but you can make yourself heard in the Blizzard Forums by making a post/thread about it.~~
+
+EDIT: As of April 11, it has been announced munching might be "fixed".
+https://us.forums.blizzard.com/en/wow/t/wotlk-stealth-change-to-feral/1566375/5
 
 ### Examples of munching
 
@@ -114,8 +120,9 @@ Figure 4: Sartharion becomes immune and consumes the ignite damage, rendering it
 
 <img src="img/Sartharion_munch.png" />
 
+- <ins>**Kologarn:**</ins> While gripped, your crits happening due to LB or projectiles still flying  from before the grip will be "munched" -  <ins>Confirmed.</ins>
 
-- <ins>**Kologarn:**</ins> While gripped, your ignites might be getting "munched" - Highly likely but not fully confirmed
+- <ins>**Algalon:**</ins> While inside a black hole, crits happening in Algalon realm will be munched.<ins>Confirmed.</ins>
 
 - <ins>**Ignis:**</ins> Slag pot munches hot streaks. Probably ignites too but not confirmed.
 
@@ -154,7 +161,7 @@ A less well-documented Ignite bug in Wrath of the Lich King is the opposite of I
 
 Until recently (at the moment of writing), this bug had not been documented or described at all for Wrath of the Lich King Classic.
 
-This bug was first discussed at length in OG Wrath in an [ElitistJerk forum thread in 2008 [1]](https://web.archive.org/web/20100412150438/http://elitistjerks.com/f31/t19766-mage_rolling_ignites_they_back/), and the first documented claim for it can be traced back to another [ElitistJerk thread in 2007[2]](https://web.archive.org/web/20110810120414/http://elitistjerks.com/f31/t12302-mage_ignites_working_correctly/).
+This bug was first discussed at length in OG Wrath in an [ElitistJerk forum thread in 2008 [1]](https://web.archive.org/web/20100412150438/http://elitistjerks.com/f31/t19766-mage_rolling_ignites_they_back/), and the first documented claim for it can be traced back to another [ElitistJerk thread in 2007 [2]](https://web.archive.org/web/20110810120414/http://elitistjerks.com/f31/t12302-mage_ignites_working_correctly/).
 
 <img src="img/old_2007.png" />
 
@@ -383,15 +390,15 @@ In contrast, a FFB mage will typically generate the expected amount of damage (r
 
 On average, XT seems to have lower ignite damage compared to other fights, which could be attributed to "heart munching." 
 
-Algalon low ignite damage stands out as an unexplained outlier. There are a few possible explanations for this:
+Algalon low ignite damage stands out as an ~~unexplained~~ outlier. ~~There are a few possible~~ explanations for this:
 
-- Small sample size of data collected from this fight. It almost reaches a total of 300 kills, compared to the 1k kills on other fights. 
+~~- Small sample size of data collected from this fight. It almost reaches a total of 300 kills, compared to the 1k kills on other fights.~~
 
 - Another possibility is that being inside the black hole causes "munching," and ignite crits during these transitions are bugged in some way (as suggested by Exo#1191). 
 
-- Another hypothesis is that better players tend to kill Algalon and are less likely to experience delays or distractions while casting spells such as Pyroblast. Or as it was stated, "algalon is only killed by better players (generally speaking), and theyre most likely to press fucking pyro just fine, instead of having 0.5s delay because their kid is screaming and their beer is all over keyboard" (From Chaotic#3768)
+~~- Another hypothesis is that better players tend to kill Algalon and are less likely to experience delays or distractions while casting spells such as Pyroblast. Or as it was stated, "algalon is only killed by better players (generally speaking), and theyre most likely to press fucking pyro just fine, instead of having 0.5s delay because their kid is screaming and their beer is all over keyboard" (From Chaotic#3768)~~
 
-- Possibility is a strange overlap between mages killing Algalon and swapping specs specifically for this fight, which may have caused them to forget to macro their WeakAuras keybinds.
+~~- Possibility is a strange overlap between mages killing Algalon and swapping specs specifically for this fight, which may have caused them to forget to macro their WeakAuras keybinds.~~
 
 ## The vomit window 🕵️
 
@@ -437,6 +444,10 @@ https://classic.warcraftlogs.com/reports/YF3nZ9RLCXrzNfMd/#fight=last&type=damag
 
 - Can we fully induce vomit in a controlled environment?
 
+## Changelog:
+
+- April 20th (The Blaze-It update): Ignite fix announcement, algalon and kolo munch update, changelog created.
+- April 11th: Added the "Munchalyzer" - Measure munch and vomit damage: https://wotlk-mage.herokuapp.com/ 
 ## Other ignite analogies
 
 Still having issues understanding ignite? Here are other ways to understand what is ignite: 
